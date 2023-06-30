@@ -3,7 +3,7 @@ package sample.cafekiosk.spring.api.controller.product.dto.request;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import sample.cafekiosk.spring.api.service.product.request.ProductCreateServiceRequest;
+import sample.cafekiosk.spring.api.service.product.dto.request.ProductCreateServiceRequest;
 import sample.cafekiosk.spring.domain.product.ProductSellingStatus;
 import sample.cafekiosk.spring.domain.product.ProductType;
 

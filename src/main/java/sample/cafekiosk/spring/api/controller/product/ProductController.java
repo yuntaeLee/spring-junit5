@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import sample.cafekiosk.spring.api.ApiResponse;
 import sample.cafekiosk.spring.api.controller.product.dto.request.ProductCreateRequest;
 import sample.cafekiosk.spring.api.service.product.ProductService;
-import sample.cafekiosk.spring.api.service.product.response.ProductResponse;
+import sample.cafekiosk.spring.api.service.product.dto.response.ProductResponse;
 
 import javax.validation.Valid;
 import java.util.List;
