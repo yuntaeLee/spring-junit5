@@ -157,9 +157,8 @@ class OrderServiceTest {
         Product product3 = createProduct("003", 5000, HANDMADE);
         productRepository.saveAll(List.of(product1, product2, product3));
 
-        Stock stock1 = Stock.create("001", 2);
+        Stock stock1 = Stock.create("001", 1);
         Stock stock2 = Stock.create("002", 2);
-        stock1.deductQuantity(1); //todo not using
         stockRepository.saveAll(List.of(stock1, stock2));
 
         OrderCreateRequest request = OrderCreateRequest.builder()
