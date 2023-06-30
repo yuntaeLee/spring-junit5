@@ -23,6 +23,11 @@ public class MailService {
                     .content(content)
                     .build()
             );
+
+            mailSendClient.a(); // spy test
+            mailSendClient.b(); // spy test
+            mailSendClient.c(); // spy test
+
             return true;
         }
 
