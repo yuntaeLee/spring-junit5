@@ -49,6 +49,14 @@ class ProductTypeTest {
         assertThat(result).isEqualTo(expected);
     }
 
+    private static Stream<Arguments> provideProductTypesForCheckingStockType() {
+        return Stream.of(
+                Arguments.of(ProductType.HANDMADE, false),
+                Arguments.of(ProductType.BOTTLE, true),
+                Arguments.of(ProductType.BAKERY, true)
+        );
+    }
+
     @DisplayName("상품 타입이 재고 관련 타입인지를 체크한다.")
     @MethodSource("provideProductTypesForCheckingStockType")
     @ParameterizedTest
@@ -58,13 +66,5 @@ class ProductTypeTest {
 
         // then
         assertThat(result).isEqualTo(expected);
-    }
-
-    private static Stream<Arguments> provideProductTypesForCheckingStockType() {
-        return Stream.of(
-                Arguments.of(ProductType.HANDMADE, false),
-                Arguments.of(ProductType.BOTTLE, true),
-                Arguments.of(ProductType.BAKERY, true)
-        );
     }
 }
